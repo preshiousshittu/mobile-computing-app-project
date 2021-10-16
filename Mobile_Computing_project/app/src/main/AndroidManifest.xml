@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mobile_Computing_project">
         <activity
+            android:name=".startpage"
+            android:exported="true" />
+        <activity
             android:name=".cartActivity"
             android:exported="true" />
         <activity
