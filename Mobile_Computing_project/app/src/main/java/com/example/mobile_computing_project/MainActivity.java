@@ -27,4 +27,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(ini);
 
     }
+    public void ShowDetail(View v){
+        Intent ini = new Intent(this, detailActivity.class);
+        startActivity(ini);
+
+    }
 }
