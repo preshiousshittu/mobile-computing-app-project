@@ -17,6 +17,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void ShowCart(View v){
+        Intent ini = new Intent(this, cartActivity.class);
+        startActivity(ini);
+
+    }
+
+    public void ShowStart(View v){
         Intent ini = new Intent(this, startpage.class);
         startActivity(ini);
 
