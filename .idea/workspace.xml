@@ -1,38 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4507d3-61e8-4275-a8d1-37647cae9681" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/androidTest/java/com/example/mobile_computing_project/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/androidTest/java/com/example/mobile_computing_project/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/java/com/example/mobile_computing_project/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/java/com/example/mobile_computing_project/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/test/java/com/example/mobile_computing_project/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/test/java/com/example/mobile_computing_project/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mobile-computing-app-project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,5 +41,17 @@
       <updated>1634351108164</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
