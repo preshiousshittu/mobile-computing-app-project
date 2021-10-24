@@ -8,10 +8,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4507d3-61e8-4275-a8d1-37647cae9681" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/mobile-computing-app-project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/java/com/example/mobile_computing_project/Helper/ManagementCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/drawable/purple_button_background.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/java/com/example/mobile_computing_project/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/java/com/example/mobile_computing_project/Activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/java/com/example/mobile_computing_project/cartActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/java/com/example/mobile_computing_project/Activity/cartActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/java/com/example/mobile_computing_project/detailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/java/com/example/mobile_computing_project/Activity/detailActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/java/com/example/mobile_computing_project/startpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/java/com/example/mobile_computing_project/Activity/startpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/layout/activity_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/layout/activity_cart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/layout/activity_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/layout/activity_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/layout/activity_startpage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Computing_project/app/src/main/res/layout/activity_startpage.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +38,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Mobile_Computing_project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

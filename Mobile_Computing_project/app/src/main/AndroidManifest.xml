@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mobile_Computing_project">
         <activity
-            android:name=".detailActivity"
+            android:name=".Activity.detailActivity"
             android:exported="false" />
         <activity
-            android:name=".startpage"
+            android:name=".Activity.startpage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,10 +22,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".cartActivity"
+            android:name=".Activity.cartActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity.MainActivity"
             android:exported="true">
 
         </activity>
