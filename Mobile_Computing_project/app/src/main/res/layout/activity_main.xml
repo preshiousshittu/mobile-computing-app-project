@@ -12,69 +12,113 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_height="600dp"
+            android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <TextView
+                    android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="224dp"
                     android:text="This is the Main page"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="16dp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="270dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="7dp"
+                    android:ems="10"
+                    android:hint="Search for Item"
+                    android:inputType="textPersonName"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.115"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="114dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="16dp"
+                        android:text="Categories"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="153dp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="182dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <EditText
-                android:id="@+id/editTextTextPersonName"
-                android:layout_width="288dp"
-                android:layout_height="87dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="114dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:text="Popular Items" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
         </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/showCart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="ShowCart"
-        android:text="Cart"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.247"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/showCart3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="ShowDetail"
-        android:text="detail"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.922" />
+        <Button
+            android:id="@+id/showCart3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ShowDetail"
+            android:text="detail"
+            tools:layout_editor_absoluteX="168dp"
+            tools:layout_editor_absoluteY="630dp" />
 
-    <Button
-        android:id="@+id/showCart2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="ShowStart"
-        android:text="Startpage"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.844"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        <Button
+            android:id="@+id/showCart2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ShowStart"
+            android:text="Startpage"
+            tools:layout_editor_absoluteX="245dp"
+            tools:layout_editor_absoluteY="547dp" />
+
+        <Button
+            android:id="@+id/showCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ShowCart"
+            android:text="Cart"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="547dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
