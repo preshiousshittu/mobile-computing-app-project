@@ -7,6 +7,7 @@
     tools:context=".Activity.MainActivity">
 
     <ScrollView
+        android:id="@+id/scrollView4"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -54,71 +55,74 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <TextView
-                        android:id="@+id/textView8"
-                        android:layout_width="114dp"
-                        android:layout_height="20dp"
-                        android:layout_marginStart="16dp"
-                        android:text="Categories"
-                        app:layout_constraintStart_toStartOf="parent"
-                        tools:layout_editor_absoluteY="153dp" />
-
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/recyclerView"
+                    <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        tools:layout_editor_absoluteX="0dp"
-                        tools:layout_editor_absoluteY="182dp" />
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="114dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="224dp"
+                            android:text="Popular Items"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.033"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/popular_items"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            tools:layout_editor_absoluteY="396dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="114dp"
+                            android:layout_height="20dp"
+                            android:text="Categories"
+                            tools:layout_editor_absoluteX="10dp"
+                            tools:layout_editor_absoluteY="125dp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/categories"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            tools:layout_editor_absoluteY="158dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="114dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="16dp"
-                android:text="Popular Items" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
         </LinearLayout>
     </ScrollView>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="414dp"
+        android:layout_height="132dp"
+        tools:layout_editor_absoluteY="599dp" >
 
-        <Button
-            android:id="@+id/showCart3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="ShowDetail"
-            android:text="detail"
-            tools:layout_editor_absoluteX="168dp"
-            tools:layout_editor_absoluteY="630dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/showCart2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="ShowStart"
-            android:text="Startpage"
-            tools:layout_editor_absoluteX="245dp"
-            tools:layout_editor_absoluteY="547dp" />
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Home" />
 
-        <Button
-            android:id="@+id/showCart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="ShowCart"
-            android:text="Cart"
-            tools:layout_editor_absoluteX="80dp"
-            tools:layout_editor_absoluteY="547dp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cart" />
+
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
