@@ -5,7 +5,10 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter> {
+    ArrayList<>
     @NonNull
     @Override
     public CategoryAdapter onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

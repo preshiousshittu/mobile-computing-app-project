@@ -32,7 +32,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 
-import com.example.project.Domain.FoodDomain;
+import com.example.mobile_computing_project.Domain.FoodDomain;
 import com.google.gson.Gson;
 
 import java.io.File;
