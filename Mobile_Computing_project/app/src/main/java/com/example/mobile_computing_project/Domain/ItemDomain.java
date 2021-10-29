@@ -2,19 +2,19 @@ package com.example.mobile_computing_project.Domain;
 
 import java.io.Serializable;
 
-public class FoodDomain implements Serializable {
+public class ItemDomain implements Serializable {
     private String title;
     private String Description;
     private double fee;
     private int numberInCard;
 
-    public FoodDomain(String title, String description, double fee) {
+    public ItemDomain(String title, String description, double fee) {
         this.title = title;
         this.Description = description;
         this.fee = fee;
     }
 
-    public FoodDomain(String title, String description, double fee, int numberInCard) {
+    public ItemDomain(String title, String description, double fee, int numberInCard) {
         this.title = title;
         Description = description;
         this.fee = fee;

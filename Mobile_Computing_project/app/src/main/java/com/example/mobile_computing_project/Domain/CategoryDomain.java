@@ -4,7 +4,7 @@ public class CategoryDomain {
     private String title;
     private String pic;
 
-    public CategoryDomain(String title, String pic){
+    public CategoryDomain(String title){
         this.title = title;
         this.pic = pic;
     }
