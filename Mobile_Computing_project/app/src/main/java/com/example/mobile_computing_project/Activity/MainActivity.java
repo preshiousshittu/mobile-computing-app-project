@@ -26,12 +26,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         recyclerViewCategory();
-        recyclerViewPopularList();
+        //recyclerViewPopularList();
 
 
     }
 
-    private void recyclerViewPopularList() {
+    /*private void recyclerViewPopularList() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false);
         recyclerViewPopularList =findViewById(R.id.popular_items);
         recyclerViewPopularList.setLayoutManager(linearLayoutManager);
@@ -39,7 +39,9 @@ public class MainActivity extends AppCompatActivity {
         itemlist.add(new ItemDomain("wje","dfjn",10.0));
         adaptar2 = new PopularAdapter(itemlist);
         recyclerViewPopularList.setAdapter(adaptar2);
-    }
+    }*/
+
+
 
     private void recyclerViewCategory() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false);
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         categoryList.add(new CategoryDomain("Hats"));
         categoryList.add(new CategoryDomain("Drinks"));
         categoryList.add(new CategoryDomain("Cake"));
+
 
         adaptar = new CategoryAdapter(categoryList);
         recyclerViewCategoryList.setAdapter(adaptar);
