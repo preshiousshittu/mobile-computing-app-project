@@ -1,4 +1,4 @@
-package com.example.mobile_computing_project.Helper;
+/*package com.example.mobile_computing_project.Helper;
 
 import android.content.Context;
 
@@ -31,3 +31,4 @@ public class ManagementCart {
         changeNumberItemsListener.changed();
     }
 }
+*/

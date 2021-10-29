@@ -1,5 +1,5 @@
 package com.example.mobile_computing_project.Activity;
-
+/**
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -35,4 +35,4 @@ public class cartActivity extends AppCompatActivity {
     public void ShowMain(View v){
         Intent ini = new Intent(this, MainActivity.class);
         startActivity(ini);}
-}
+}*/
