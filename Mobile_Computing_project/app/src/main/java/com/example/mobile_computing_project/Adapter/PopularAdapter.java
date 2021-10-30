@@ -16,18 +16,17 @@ import com.example.mobile_computing_project.R;
 
 import java.util.ArrayList;
 
-public class PopularAdapter  extends RecyclerView.Adapter<PopularAdapter.ViewHolder> {
-
+public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.ViewHolder> {
     ArrayList<ItemDomain> itemDomains;
 
-    public PopularAdapter(ArrayList<ItemDomain> itemDomains) {
-        this.itemDomains = itemDomains;
+    public PopularAdapter(ArrayList<ItemDomain> ItemDomains) {
+        this.itemDomains = ItemDomains;
     }
 
     @NonNull
     @Override
-    public PopularAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.viewholder_cat, parent, false);
+    public  ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.viewholder_popular, parent, false);
         return new ViewHolder(inflate);
     }
 
@@ -35,14 +34,7 @@ public class PopularAdapter  extends RecyclerView.Adapter<PopularAdapter.ViewHol
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.title.setText(itemDomains.get(position).getTitle());
         holder.fee.setText(String.valueOf(itemDomains.get(position).getFee()));
-        holder.addBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent ini = new Intent(holder.itemView.getContext(),detailActivity.class);
-                ini.putExtra("object", itemDomains.get(position));
-                holder.itemView.getContext().startActivity(ini);
-            }
-        });
+
     }
 
 
@@ -53,16 +45,15 @@ public class PopularAdapter  extends RecyclerView.Adapter<PopularAdapter.ViewHol
     }
 
     public class  ViewHolder extends RecyclerView.ViewHolder{
-        TextView title,fee;
-        TextView addBTN;
+        TextView title,fee,addBtn;
         ConstraintLayout mainLayout;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            title = itemView.findViewById(R.id.title);
             fee = itemView.findViewById(R.id.fee);
-            mainLayout = itemView.findViewById(R.id.mainLayout);
-            addBTN = itemView.findViewById(R.id.addBTN);
+            title = itemView.findViewById(R.id.categoryName);
+            addBtn = itemView.findViewById(R.id.addBTN);
+            mainLayout = itemView.findViewById(R.id.popular_items);
         }
     }
 }
