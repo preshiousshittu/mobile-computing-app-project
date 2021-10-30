@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /*private void recyclerViewPopularList() {
+   /* private void recyclerViewPopularList() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false);
         recyclerViewPopularList =findViewById(R.id.popular_items);
         recyclerViewPopularList.setLayoutManager(linearLayoutManager);
@@ -61,11 +61,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewCategoryList.setAdapter(adaptar);
     }
 
-   /* public void ShowCart(View v){
+   public void ShowCart(View v){
         Intent ini = new Intent(this, cartActivity.class);
         startActivity(ini);
 
-    }*/
+    }
 
     public void ShowStart(View v){
         Intent ini = new Intent(this, startpage.class);
