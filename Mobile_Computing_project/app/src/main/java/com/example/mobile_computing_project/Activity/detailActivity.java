@@ -1,8 +1,12 @@
-package com.example.mobile_computing_project;
+package com.example.mobile_computing_project.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
+import com.example.mobile_computing_project.R;
 
 public class detailActivity extends AppCompatActivity {
 
@@ -11,4 +15,7 @@ public class detailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
     }
+    public void ShowMain(View v){
+        Intent ini = new Intent(this, MainActivity.class);
+        startActivity(ini);}
 }
