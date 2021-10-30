@@ -34,10 +34,6 @@ public class startpage extends AppCompatActivity
 
 
     }
-    public void ShowMain(View v){
-        Intent ini = new Intent(this, MainActivity.class);
-        startActivity(ini);
-    }
 
     @Override
     public void swapToSignIn() {

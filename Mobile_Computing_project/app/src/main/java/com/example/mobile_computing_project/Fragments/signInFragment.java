@@ -1,6 +1,7 @@
 package com.example.mobile_computing_project.Fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.mobile_computing_project.Activity.MainActivity;
 import com.example.mobile_computing_project.R;
 
 /**
@@ -80,6 +82,19 @@ public class signInFragment extends Fragment {
             }
         });
 
+        Button SIsignInbtn = v.findViewById(R.id.SIsignInbtn);
+        SIsignInbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switchToMain();
+            }
+        });
+
         return v;
+    }
+
+    public void switchToMain() {
+        Intent ini = new Intent(getActivity(), MainActivity.class);
+        startActivity(ini);
     }
 }
