@@ -1,5 +1,6 @@
 package com.example.mobile_computing_project.Adapter;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.mobile_computing_project.Activity.detailActivity;
 import com.example.mobile_computing_project.Domain.CategoryDomain;
 import com.example.mobile_computing_project.R;
 
@@ -32,6 +34,13 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.categoryName.setText(categoryDomains.get(position).getTitle());
+        holder.categoryName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ini = new Intent(holder.itemView.getContext(), detailActivity.class);
+                holder.itemView.getContext().startActivity(ini);
+            }
+        });
     }
 
 
