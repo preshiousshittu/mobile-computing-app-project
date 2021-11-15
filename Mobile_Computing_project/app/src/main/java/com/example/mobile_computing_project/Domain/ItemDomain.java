@@ -45,11 +45,11 @@ public class ItemDomain implements Serializable {
         this.fee = fee;
     }
 
-    public int getNumberInCard() {
+    public int getNumberInCart() {
         return numberInCard;
     }
 
-    public void setNumberInCard(int numberInCard) {
+    public void setNumberInCart(int numberInCard) {
         this.numberInCard = numberInCard;
     }
 }
