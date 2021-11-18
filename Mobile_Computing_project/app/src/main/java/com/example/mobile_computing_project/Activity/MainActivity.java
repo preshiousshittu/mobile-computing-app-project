@@ -9,10 +9,9 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.mobile_computing_project.Adapter.CategoryAdapter;
-import com.example.mobile_computing_project.Adapter.PopularAdapter;
 import com.example.mobile_computing_project.Domain.CategoryDomain;
-import com.example.mobile_computing_project.Domain.ItemDomain;
 import com.example.mobile_computing_project.R;
+import com.example.project.Activity.CartListActivity;
 
 import java.util.ArrayList;
 
