@@ -11,8 +11,6 @@ import android.view.View;
 import com.example.mobile_computing_project.Adapter.CategoryAdapter;
 import com.example.mobile_computing_project.Domain.CategoryDomain;
 import com.example.mobile_computing_project.R;
-import com.example.project.Activity.CartListActivity;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
