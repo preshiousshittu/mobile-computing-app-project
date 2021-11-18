@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void recyclerViewCategory() {
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false);
         recyclerViewCategoryList=findViewById(R.id.categories);
         recyclerViewCategoryList.setLayoutManager(linearLayoutManager);
 

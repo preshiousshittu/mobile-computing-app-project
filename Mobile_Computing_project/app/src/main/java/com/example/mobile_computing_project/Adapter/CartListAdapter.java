@@ -10,7 +10,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
 import com.example.mobile_computing_project.Domain.ItemDomain;
 import com.example.mobile_computing_project.Helper.ManagementCart;
 import com.example.mobile_computing_project.Interface.ChangeNumberItemsListener;
@@ -45,11 +44,11 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.ViewHo
         holder.totalEachItem.setText(String.valueOf(Math.round((itemDomains.get(position).getNumberInCart() * itemDomains.get(position).getFee()) * 100.0) / 100.0));
         holder.num.setText(String.valueOf(itemDomains.get(position).getNumberInCart()));
 
-        int drawableResourceId = holder.itemView.getContext().getResources().getIdentifier(itemDomains.get(position).getPic(), "drawable", holder.itemView.getContext().getPackageName());
+        int drawableResourceId = holder.itemView.getContext().getResources().getIdentifier(itemDomains.get(position).getTitle(), "drawable", holder.itemView.getContext().getPackageName());
 
-        Glide.with(holder.itemView.getContext())
+        /*Glide.with(holder.itemView.getContext())
                 .load(drawableResourceId)
-                .into(holder.pic);
+                .into(holder.pic);*/
 
 
         holder.plusItem.setOnClickListener(new View.OnClickListener() {
