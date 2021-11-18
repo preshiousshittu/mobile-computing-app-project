@@ -1,4 +1,4 @@
-package com.example.project.Activity;
+package com.example.mobile_computing_project.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -17,7 +17,7 @@ import com.example.mobile_computing_project.Interface.ChangeNumberItemsListener;
 import com.example.mobile_computing_project.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class CartListActivity extends AppCompatActivity {
+public class cartActivity extends AppCompatActivity {
     private RecyclerView.Adapter adapter;
     private RecyclerView recyclerViewList;
     private ManagementCart managementCart;
@@ -28,33 +28,33 @@ public class CartListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_card_list);
+        setContentView(R.layout.activity_cart);
 
         managementCart = new ManagementCart(this);
 
         initView();
         initList();
         calculateCard();
-        bottomNavigation();
+        //bottomNavigation();
     }
-    private void bottomNavigation() {
+    /*private void bottomNavigation() {
         FloatingActionButton floatingActionButton = findViewById(R.id.card_btn);
         LinearLayout homeBtn = findViewById(R.id.homeBtn);
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(CartListActivity.this, CartListActivity.class));
+                startActivity(new Intent(cartActivity.this, cartActivity.class));
             }
         });
 
         homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(CartListActivity.this, MainActivity.class));
+                startActivity(new Intent(cartActivity.this, MainActivity.class));
             }
         });
-    }
+    }*/
     private void initList() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerViewList.setLayoutManager(linearLayoutManager);
@@ -91,7 +91,7 @@ public class CartListActivity extends AppCompatActivity {
 
     private void initView() {
         recyclerViewList = findViewById(R.id.recyclerview);
-        totalFeeTxt = findViewById(R.id.totalFeeTxt);
+        totalFeeTxt = findViewById(R.id.totalTxt);
         taxTxt = findViewById(R.id.taxTxt);
         deliveryTxt = findViewById(R.id.deliveryTxt);
         totalTxt = findViewById(R.id.totalTxt);
