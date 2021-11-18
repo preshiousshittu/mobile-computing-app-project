@@ -90,7 +90,7 @@ public class cartActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        recyclerViewList = findViewById(R.id.recyclerview);
+        recyclerViewList = findViewById(R.id.recyclerveiw);
         totalFeeTxt = findViewById(R.id.totalTxt);
         taxTxt = findViewById(R.id.taxTxt);
         deliveryTxt = findViewById(R.id.deliveryTxt);

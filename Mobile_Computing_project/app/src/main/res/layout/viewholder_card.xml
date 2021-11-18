@@ -7,7 +7,7 @@
     android:layout_marginTop="10dp"
     android:layout_marginEnd="16dp"
     android:layout_marginBottom="10dp"
-    android:background="@drawable/card_background"
+    android:background="@android:color/holo_orange_light"
     android:elevation="3dp">
 
     <ImageView
@@ -22,7 +22,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pizza1" />
+        app:srcCompat="@drawable/_61_1618979_birthday_celebration_items_hd_png_download" />
 
     <TextView
         android:id="@+id/title2Txt"
@@ -31,9 +31,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="title"
-        android:textStyle="bold"
-        android:textSize="18sp"
         android:textColor="#373b54"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/picCard"
         app:layout_constraintTop_toTopOf="@+id/picCard" />
 
@@ -45,7 +45,7 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/picCard"
         app:layout_constraintStart_toEndOf="@+id/picCard"
-        app:srcCompat="@drawable/minus" />
+        app:srcCompat="@drawable/btn1" />
 
     <TextView
         android:id="@+id/numberItemTxt"
@@ -54,8 +54,8 @@
         android:layout_marginStart="8dp"
         android:text="1"
         android:textColor="#373b54"
-        android:textStyle="bold"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/minusCardBtn"
         app:layout_constraintStart_toEndOf="@+id/minusCardBtn"
         app:layout_constraintTop_toTopOf="@+id/minusCardBtn" />
@@ -68,7 +68,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/minusCardBtn"
         app:layout_constraintStart_toEndOf="@+id/numberItemTxt"
         app:layout_constraintTop_toTopOf="@+id/minusCardBtn"
-        app:srcCompat="@drawable/plus" />
+        app:srcCompat="@drawable/btn2" />
 
     <TextView
         android:id="@+id/feeEachItem"
