@@ -68,7 +68,7 @@ public class cartActivity extends AppCompatActivity {
         recyclerViewList.setAdapter(adapter);
         if (managementCart.getListCard().isEmpty()) {
             emptyTxt.setVisibility(View.VISIBLE);
-            scrollView.setVisibility(View.GONE);
+            //scrollView.setVisibility(View.GONE);
         } else {
             emptyTxt.setVisibility(View.GONE);
             scrollView.setVisibility(View.VISIBLE);

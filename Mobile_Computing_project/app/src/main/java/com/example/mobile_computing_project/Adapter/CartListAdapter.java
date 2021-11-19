@@ -85,7 +85,7 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.ViewHo
         return itemDomains.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static  class ViewHolder extends RecyclerView.ViewHolder {
         TextView title, feeEachItem;
         ImageView pic, plusItem, minusItem;
         TextView totalEachItem, num;
