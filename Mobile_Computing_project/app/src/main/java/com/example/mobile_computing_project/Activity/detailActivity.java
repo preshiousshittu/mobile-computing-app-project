@@ -39,6 +39,7 @@ private ManagementCart managementCart;
         //int drawableResourceId=this.getResources().getIdentifier(object.getPic(), "drawable",this.getPackageName());
 
         managementCart = new ManagementCart(this);
+        Log.d("fee", ""+object.getFee());
         titleTxt.setText(object.getTitle());
         feeTxt.setText("$"+object.getFee());
         descriptionTxt.setText(object.getDescription());
@@ -48,6 +49,7 @@ private ManagementCart managementCart;
             public void onClick(View v){
                 numberOrder = numberOrder + 1;
                 numberOrderTxt.setText(String.valueOf(numberOrder));
+                feeTxt.setText(String.valueOf(numberOrder* object.getFee()));
             }
         });
 
@@ -55,6 +57,8 @@ private ManagementCart managementCart;
             public void onClick(View v){
                 if(numberOrder>1){
                     numberOrder=numberOrder-1;
+                    numberOrderTxt.setText(String.valueOf(numberOrder));
+                    feeTxt.setText(String.valueOf(numberOrder* object.getFee()));
                 }
                 numberOrderTxt.setText(String.valueOf(numberOrder));
             }
