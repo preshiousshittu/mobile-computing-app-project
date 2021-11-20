@@ -43,7 +43,8 @@ public class cartActivity extends AppCompatActivity {
             public void onClick(View v){
                 Toast.makeText(getApplicationContext(), "your items have been checkked out", Toast.LENGTH_SHORT).show();
                 managementCart.reset();
-            }
+                ShowMain();
+        }
 
         });
     }
@@ -110,6 +111,11 @@ public class cartActivity extends AppCompatActivity {
         emptyTxt = findViewById(R.id.emptyTxt);
         scrollView = findViewById(R.id.scrollView4);
         checkoutBtn = findViewById(R.id.textView7);
+    }
+    public void ShowMain(){
+        Intent ini = new Intent(this, MainActivity.class);
+        startActivity(ini);
+
     }
 
 
