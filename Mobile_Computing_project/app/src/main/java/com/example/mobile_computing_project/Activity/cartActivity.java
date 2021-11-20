@@ -71,7 +71,7 @@ public class cartActivity extends AppCompatActivity {
             //scrollView.setVisibility(View.GONE);
         } else {
             emptyTxt.setVisibility(View.GONE);
-            scrollView.setVisibility(View.VISIBLE);
+            //scrollView.setVisibility(View.VISIBLE);
         }
     }
 
@@ -82,6 +82,8 @@ public class cartActivity extends AppCompatActivity {
         tax = Math.round((managementCart.getTotalFee() * percentTax) * 100.0) / 100.0;
         double total = Math.round((managementCart.getTotalFee() + tax + delivery) * 100.0) / 100.0;
         double itemTotal = Math.round(managementCart.getTotalFee() * 100.0) / 100.0;
+
+        System.out.println(" " + itemTotal);
 
         totalFeeTV.setText("$" + itemTotal);
         taxTV.setText("$" + tax);

@@ -94,13 +94,13 @@
     </ScrollView>
 
     <TextView
-        android:id="@+id/addToCardBtn"
+        android:id="@+id/addToCartBtn"
         android:layout_width="391dp"
         android:layout_height="79dp"
         android:background="@drawable/purplebckground"
         android:elevation="3dp"
         android:gravity="center"
-        android:text="Add to Card"
+        android:text="Add to Cart"
         android:textColor="#ffffff"
         android:textSize="23sp"
         android:textStyle="bold"
