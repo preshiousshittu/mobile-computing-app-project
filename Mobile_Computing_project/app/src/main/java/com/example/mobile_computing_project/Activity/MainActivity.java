@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-   /* private void recyclerViewPopularList() {
+   /* private void recycler ViewPopularList() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false);
         recyclerViewPopularList =findViewById(R.id.popular_items);
         recyclerViewPopularList.setLayoutManager(linearLayoutManager);
@@ -46,12 +46,12 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewCategoryList.setLayoutManager(linearLayoutManager);
 
         ArrayList<CategoryDomain> categoryList = new ArrayList<>();
-        categoryList.add(new CategoryDomain("Balloons"));
-        categoryList.add(new CategoryDomain("Banners"));
-        categoryList.add(new CategoryDomain("Centerpiece"));
-        categoryList.add(new CategoryDomain("Hats"));
-        categoryList.add(new CategoryDomain("Drinks"));
-        categoryList.add(new CategoryDomain("Cake"));
+        categoryList.add(new CategoryDomain("Balloons","Inflatable rubber balloons", 2));
+        categoryList.add(new CategoryDomain("Banners", "Helps to show what you are celebrating", 5));
+        categoryList.add(new CategoryDomain("Centerpiece", "Extra decorations to bring life to your party", 20));
+        categoryList.add(new CategoryDomain("Hats", "Birthday hats to help stay dressed", 5));
+        categoryList.add(new CategoryDomain("Drinks", "We always need some drinks to keep the party going", 20));
+        categoryList.add(new CategoryDomain("Cake", "The important item, you wouldn't miss out on the varities we've got",30));
 
 
         adaptar = new CategoryAdapter(categoryList);
