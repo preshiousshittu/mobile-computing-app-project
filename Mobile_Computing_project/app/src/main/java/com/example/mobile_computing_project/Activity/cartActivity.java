@@ -43,7 +43,8 @@ public class cartActivity extends AppCompatActivity {
             public void onClick(View v){
                 Toast.makeText(getApplicationContext(), "your items have been checkked out", Toast.LENGTH_SHORT).show();
                 managementCart.reset();
-            }
+                ShowMain();
+        }
 
         });
     }
@@ -76,7 +77,7 @@ public class cartActivity extends AppCompatActivity {
         });
 
         recyclerViewList.setAdapter(adapter);
-        if (managementCart.getListCard().isEmpty()) {
+        if (!managementCart.getListCard().isEmpty()) {
             emptyTxt.setVisibility(View.VISIBLE);
             //scrollView.setVisibility(View.GONE);
         } else {
@@ -99,6 +100,7 @@ public class cartActivity extends AppCompatActivity {
         taxTV.setText("$" + tax);
         deliveryTV.setText("$" + delivery);
         emptyTxt.setText("$" + total);
+        Log.d("total", " " + total);
     }
 
     private void initView() {
@@ -110,6 +112,11 @@ public class cartActivity extends AppCompatActivity {
         emptyTxt = findViewById(R.id.emptyTxt);
         scrollView = findViewById(R.id.scrollView4);
         checkoutBtn = findViewById(R.id.textView7);
+    }
+    public void ShowMain(){
+        Intent ini = new Intent(this, MainActivity.class);
+        startActivity(ini);
+
     }
 
 
