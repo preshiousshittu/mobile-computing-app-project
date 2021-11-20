@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.mobile_computing_project.Domain.CategoryDomain;
-import com.example.mobile_computing_project.Domain.ItemDomain;
 import com.example.mobile_computing_project.R;
 
 public class detailActivity extends AppCompatActivity {
@@ -70,7 +69,7 @@ private int numberOrder = 1;
         startActivity(ini);}
 
     public void initView(){
-        addToCardBtn=findViewById(R.id.addToCardBtn);
+        addToCardBtn=findViewById(R.id.addToCartBtn );
         titleTxt=findViewById(R.id.titleTxt);
         feeTxt=findViewById(R.id.priceTxt);
         descriptionTxt=findViewById(R.id.descriptionTxt);
