@@ -24,10 +24,4 @@ public class CategoryDomain {
     public void setPic(String pic) {
         this.pic = pic;
     }
-
-    public String getFee() {
-    }
-
-    public String getDescription() {
-    }
 }

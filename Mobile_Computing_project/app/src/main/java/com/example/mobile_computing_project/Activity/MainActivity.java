@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-   /* private void recyclerViewPopularList() {
+   /* private void recycler ViewPopularList() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false);
         recyclerViewPopularList =findViewById(R.id.popular_items);
         recyclerViewPopularList.setLayoutManager(linearLayoutManager);
