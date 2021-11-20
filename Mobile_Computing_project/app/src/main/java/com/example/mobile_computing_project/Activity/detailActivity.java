@@ -32,7 +32,7 @@ private int numberOrder = 1;
     public void getBundle() {
         object=(CategoryDomain) getIntent().getSerializableExtra("object");
 
-        int drawableResourceId=this.getResources().getIdentifier(object.getPic(), "drawable",this.getPackageName());
+        //int drawableResourceId=this.getResources().getIdentifier(object.getPic(), "drawable",this.getPackageName());
 
         titleTxt.setText(object.getTitle());
         feeTxt.setText("$"+object.getFee());
@@ -57,7 +57,7 @@ private int numberOrder = 1;
 
         addToCardBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v){
-                
+
             }
 
         });
