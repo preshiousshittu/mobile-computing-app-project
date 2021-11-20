@@ -129,8 +129,8 @@
 
                 <TextView
                     android:id="@+id/totalTxt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="306dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Total:"
                     android:textColor="#373b54"

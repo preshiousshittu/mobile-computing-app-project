@@ -77,7 +77,7 @@ public class cartActivity extends AppCompatActivity {
         });
 
         recyclerViewList.setAdapter(adapter);
-        if (managementCart.getListCard().isEmpty()) {
+        if (!managementCart.getListCard().isEmpty()) {
             emptyTxt.setVisibility(View.VISIBLE);
             //scrollView.setVisibility(View.GONE);
         } else {
@@ -100,6 +100,7 @@ public class cartActivity extends AppCompatActivity {
         taxTV.setText("$" + tax);
         deliveryTV.setText("$" + delivery);
         emptyTxt.setText("$" + total);
+        Log.d("total", " " + total);
     }
 
     private void initView() {
