@@ -1,6 +1,8 @@
 package com.example.mobile_computing_project.Fragments;
 
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,8 +12,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
+import com.example.mobile_computing_project.Activity.MainActivity;
 import com.example.mobile_computing_project.R;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -66,20 +76,77 @@ public class signUpFragment extends Fragment {
         }
     }
 
+    EditText emailET, passET;
+    Button SUsignInbtn;
+    Button SUsignUpbtn;
+    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+    ProgressDialog progressDialog;
+    FirebaseAuth mAuth;
+    FirebaseUser mUser;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_sign_up, container, false);
-
-
-        Button SUsignInbtn = v.findViewById(R.id.SUsignInbtn);
+        emailET = v.findViewById(R.id.emailSUET);
+        passET = v.findViewById(R.id.passSUET);
+        SUsignUpbtn = v.findViewById(R.id.SUsignUpbtn);
+        SUsignInbtn = v.findViewById(R.id.SUsignInbtn);
+        progressDialog = new ProgressDialog(this.getContext());
+        mAuth = FirebaseAuth.getInstance();
+        mUser = mAuth.getCurrentUser();
         SUsignInbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 activity.swapToSignIn();
             }
         });
+
+
+        SUsignUpbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                performSignUp();
+            }
+        });
+
         return v;
+    }
+
+    private void performSignUp() {
+        String email = emailET.getText().toString();
+        String pass = passET.getText().toString();
+
+        if (!email.matches(emailPattern)) {
+            emailET.setError("Enter Correct Email");
+        } else if (pass.isEmpty() || pass.length() < 6) {
+            passET.setError("Enter Proper Password");
+        } else {
+            progressDialog.setMessage("Please wait while Sign In...");
+            progressDialog.setTitle("Sign In");
+            progressDialog.setCanceledOnTouchOutside(false);
+            progressDialog.show();
+
+            mAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if(task.isSuccessful()) {
+                        progressDialog.dismiss();
+                        Toast.makeText(getContext(), "Sign In Successful", Toast.LENGTH_SHORT).show();
+                        switchToMain();
+                    } else {
+                        progressDialog.dismiss();
+                        Toast.makeText(getContext(), "Sign In Unsuccessful", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+        }
+    }
+
+    private void switchToMain() {
+        Intent ini = new Intent(getActivity(), MainActivity.class);
+        ini.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(ini);
     }
 }

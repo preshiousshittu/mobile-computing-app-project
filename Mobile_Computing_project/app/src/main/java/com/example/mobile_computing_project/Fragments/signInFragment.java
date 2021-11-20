@@ -144,7 +144,7 @@ public class signInFragment extends Fragment {
                         switchToMain();
                     } else {
                         progressDialog.dismiss();
-                        Toast.makeText(getContext(), ""+task.getException(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "Registration Unsuccessful", Toast.LENGTH_SHORT).show();
 
                     }
                 }
