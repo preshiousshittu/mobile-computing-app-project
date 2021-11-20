@@ -42,6 +42,9 @@ public class ManagementCart {
         Toast.makeText(context, "Added To Your Card", Toast.LENGTH_SHORT).show();
 
     }
+    public void reset(){
+        tinyDB.clear();
+    }
 
     public ArrayList<CategoryDomain> getListCard() {
         return tinyDB.getListObject("CardList");
