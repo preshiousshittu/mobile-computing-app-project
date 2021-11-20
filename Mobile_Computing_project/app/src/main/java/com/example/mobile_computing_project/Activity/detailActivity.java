@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -31,6 +32,7 @@ private int numberOrder = 1;
 
     public void getBundle() {
         object=(CategoryDomain) getIntent().getSerializableExtra("object");
+        Log.d("object", ""+object);
 
         //int drawableResourceId=this.getResources().getIdentifier(object.getPic(), "drawable",this.getPackageName());
 
@@ -72,7 +74,7 @@ private int numberOrder = 1;
         titleTxt=findViewById(R.id.titleTxt);
         feeTxt=findViewById(R.id.priceTxt);
         descriptionTxt=findViewById(R.id.descriptionTxt);
-        numberOrderTxt=findViewById(R.id.numberItemTxt);
+        numberOrderTxt=findViewById(R.id.numberOrderTxt);
         plusBTN=findViewById(R.id.plusBTN);
         minusBTN=findViewById(R.id.minusBTN);
         giftPic=findViewById(R.id.giftPic);

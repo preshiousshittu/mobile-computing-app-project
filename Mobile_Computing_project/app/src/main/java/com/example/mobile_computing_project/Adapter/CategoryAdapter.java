@@ -1,6 +1,7 @@
 package com.example.mobile_computing_project.Adapter;
 
 import android.content.Intent;
+import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,7 @@ import com.example.mobile_computing_project.Activity.detailActivity;
 import com.example.mobile_computing_project.Domain.CategoryDomain;
 import com.example.mobile_computing_project.R;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
@@ -38,6 +40,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
             @Override
             public void onClick(View view) {
                 Intent ini = new Intent(holder.itemView.getContext(), detailActivity.class);
+                ini.putExtra( "object", (Serializable) categoryDomains.get( holder.getAdapterPosition() ) );
                 holder.itemView.getContext().startActivity(ini);
             }
         });

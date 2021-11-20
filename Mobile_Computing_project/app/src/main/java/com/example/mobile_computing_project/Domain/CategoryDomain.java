@@ -1,6 +1,8 @@
 package com.example.mobile_computing_project.Domain;
 
-public class CategoryDomain {
+import java.io.Serializable;
+
+public class CategoryDomain implements Serializable {
     private String title;
     private String pic;
     private String Description;
