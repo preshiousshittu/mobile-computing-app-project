@@ -71,7 +71,7 @@ public class cartActivity extends AppCompatActivity {
             //scrollView.setVisibility(View.GONE);
         } else {
             emptyTxt.setVisibility(View.GONE);
-            scrollView.setVisibility(View.VISIBLE);
+            //scrollView.setVisibility(View.VISIBLE);
         }
     }
 

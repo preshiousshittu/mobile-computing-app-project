@@ -32,6 +32,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 
+import com.example.mobile_computing_project.Domain.CategoryDomain;
 import com.example.mobile_computing_project.Domain.ItemDomain;
 import com.google.gson.Gson;
 
@@ -327,14 +328,14 @@ public class TinyDB {
     }
 
 
-    public ArrayList<ItemDomain> getListObject(String key){
+    public ArrayList<CategoryDomain> getListObject(String key){
         Gson gson = new Gson();
 
         ArrayList<String> objStrings = getListString(key);
-        ArrayList<ItemDomain> playerList =  new ArrayList<ItemDomain>();
+        ArrayList<CategoryDomain> playerList =  new ArrayList<CategoryDomain>();
 
         for(String jObjString : objStrings){
-            ItemDomain player  = gson.fromJson(jObjString,  ItemDomain.class);
+            CategoryDomain player  = gson.fromJson(jObjString,  CategoryDomain.class);
             playerList.add(player);
         }
         return playerList;
@@ -489,11 +490,11 @@ public class TinyDB {
         putString(key, gson.toJson(obj));
     }
 
-    public void putListObject(String key, ArrayList<ItemDomain> playerList){
+    public void putListObject(String key, ArrayList<CategoryDomain> playerList){
         checkForNullKey(key);
         Gson gson = new Gson();
         ArrayList<String> objStrings = new ArrayList<String>();
-        for(ItemDomain player: playerList){
+        for(CategoryDomain player: playerList){
             objStrings.add(gson.toJson(player));
         }
         putListString(key, objStrings);
