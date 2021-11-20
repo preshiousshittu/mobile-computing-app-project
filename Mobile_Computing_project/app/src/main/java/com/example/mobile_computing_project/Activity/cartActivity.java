@@ -21,7 +21,7 @@ public class cartActivity extends AppCompatActivity {
     private RecyclerView.Adapter adapter;
     private RecyclerView recyclerViewList;
     private ManagementCart managementCart;
-    private TextView totalFeeTxt, taxTxt, deliveryTxt, totalTxt, emptyTxt;
+    private TextView totalFeeTV, taxTxt, deliveryTxt, emptyTxt, deliveryTV, taxTV;
     private double tax;
     private ScrollView scrollView;
 
@@ -83,18 +83,18 @@ public class cartActivity extends AppCompatActivity {
         double total = Math.round((managementCart.getTotalFee() + tax + delivery) * 100.0) / 100.0;
         double itemTotal = Math.round(managementCart.getTotalFee() * 100.0) / 100.0;
 
-        totalFeeTxt.setText("$" + itemTotal);
-        taxTxt.setText("$" + tax);
-        deliveryTxt.setText("$" + delivery);
-        totalTxt.setText("$" + total);
+        totalFeeTV.setText("$" + itemTotal);
+        taxTV.setText("$" + tax);
+        deliveryTV.setText("$" + delivery);
+        emptyTxt.setText("$" + total);
     }
 
     private void initView() {
         recyclerViewList = findViewById(R.id.recyclerveiw);
-        totalFeeTxt = findViewById(R.id.totalTxt);
-        taxTxt = findViewById(R.id.taxTxt);
-        deliveryTxt = findViewById(R.id.deliveryTxt);
-        totalTxt = findViewById(R.id.totalTxt);
+        totalFeeTV = findViewById(R.id.totalFeeTV);
+        taxTV = findViewById(R.id.taxTV);
+        deliveryTV = findViewById(R.id.deliveryTV);
+        //totalTxt = findViewById(R.id.totalTxt);
         emptyTxt = findViewById(R.id.emptyTxt);
         scrollView = findViewById(R.id.scrollView4);
     }
