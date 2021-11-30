@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.mobile_computing_project.Domain.CategoryDomain;
+import com.example.mobile_computing_project.Helper.ManagementCart;
 import com.example.mobile_computing_project.R;
 
 public class detailActivity extends AppCompatActivity {
@@ -18,6 +20,7 @@ private TextView titleTxt,feeTxt,descriptionTxt,numberOrderTxt;
 private ImageView plusBTN,minusBTN,giftPic;
 private CategoryDomain object;
 private int numberOrder = 1;
+private ManagementCart managementCart;
 
 
     @Override
@@ -35,6 +38,8 @@ private int numberOrder = 1;
 
         //int drawableResourceId=this.getResources().getIdentifier(object.getPic(), "drawable",this.getPackageName());
 
+        managementCart = new ManagementCart(this);
+        Log.d("fee", ""+object.getFee());
         titleTxt.setText(object.getTitle());
         feeTxt.setText("$"+object.getFee());
         descriptionTxt.setText(object.getDescription());
@@ -44,6 +49,7 @@ private int numberOrder = 1;
             public void onClick(View v){
                 numberOrder = numberOrder + 1;
                 numberOrderTxt.setText(String.valueOf(numberOrder));
+                feeTxt.setText(String.valueOf(numberOrder* object.getFee()));
             }
         });
 
@@ -51,14 +57,19 @@ private int numberOrder = 1;
             public void onClick(View v){
                 if(numberOrder>1){
                     numberOrder=numberOrder-1;
+                    numberOrderTxt.setText(String.valueOf(numberOrder));
+                    feeTxt.setText(String.valueOf(numberOrder* object.getFee()));
                 }
                 numberOrderTxt.setText(String.valueOf(numberOrder));
             }
         });
 
         addToCardBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v){
-
+                Log.d("object", ""+object.getTitle());
+                object.setNumberInCart(numberOrder);
+                managementCart.insertFood(object);
             }
 
         });

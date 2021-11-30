@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.mobile_computing_project.Domain.CategoryDomain;
 import com.example.mobile_computing_project.Domain.ItemDomain;
 import com.example.mobile_computing_project.Helper.ManagementCart;
 import com.example.mobile_computing_project.Interface.ChangeNumberItemsListener;
@@ -18,11 +19,11 @@ import com.example.mobile_computing_project.R;
 import java.util.ArrayList;
 
 public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.ViewHolder> {
-    private ArrayList<ItemDomain> itemDomains;
+    private ArrayList<CategoryDomain> itemDomains;
     private ManagementCart managementCart;
     private ChangeNumberItemsListener changeNumberItemsListener;
 
-    public CartListAdapter(ArrayList<ItemDomain> itemDomains, Context context, ChangeNumberItemsListener changeNumberItemsListener) {
+    public CartListAdapter(ArrayList<CategoryDomain> itemDomains, Context context, ChangeNumberItemsListener changeNumberItemsListener) {
 
         this.itemDomains = itemDomains;
         managementCart = new ManagementCart(context);

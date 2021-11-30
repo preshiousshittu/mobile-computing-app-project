@@ -46,12 +46,12 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewCategoryList.setLayoutManager(linearLayoutManager);
 
         ArrayList<CategoryDomain> categoryList = new ArrayList<>();
-        categoryList.add(new CategoryDomain("Balloons","Inflatable rubber balloons", 2));
-        categoryList.add(new CategoryDomain("Banners", "Helps to show what you are celebrating", 5));
-        categoryList.add(new CategoryDomain("Centerpiece", "Extra decorations to bring life to your party", 20));
-        categoryList.add(new CategoryDomain("Hats", "Birthday hats to help stay dressed", 5));
-        categoryList.add(new CategoryDomain("Drinks", "We always need some drinks to keep the party going", 20));
-        categoryList.add(new CategoryDomain("Cake", "The important item, you wouldn't miss out on the varities we've got",30));
+        categoryList.add(new CategoryDomain("Balloons","Inflatable rubber balloons", 2.0));
+        categoryList.add(new CategoryDomain("Banners", "Helps to show what you are celebrating", 5.0));
+        categoryList.add(new CategoryDomain("Centerpiece", "Extra decorations to bring life to your party", 20.0));
+        categoryList.add(new CategoryDomain("Hats", "Birthday hats to help stay dressed", 5.0));
+        categoryList.add(new CategoryDomain("Drinks", "We always need some drinks to keep the party going", 20.0));
+        categoryList.add(new CategoryDomain("Cake", "The important item, you wouldn't miss out on the varities we've got",30.0));
 
 
         adaptar = new CategoryAdapter(categoryList);

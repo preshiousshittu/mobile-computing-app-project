@@ -6,10 +6,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mobile_computing_project.Adapter.CartListAdapter;
 import com.example.mobile_computing_project.Helper.ManagementCart;
@@ -21,7 +23,7 @@ public class cartActivity extends AppCompatActivity {
     private RecyclerView.Adapter adapter;
     private RecyclerView recyclerViewList;
     private ManagementCart managementCart;
-    private TextView totalFeeTV, taxTxt, deliveryTxt, emptyTxt, deliveryTV, taxTV;
+    private TextView totalFeeTV, taxTxt, deliveryTxt, emptyTxt, deliveryTV, taxTV, checkoutBtn;
     private double tax;
     private ScrollView scrollView;
 
@@ -36,6 +38,15 @@ public class cartActivity extends AppCompatActivity {
         initList();
         calculateCard();
         //bottomNavigation();
+        checkoutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Toast.makeText(getApplicationContext(), "your items have been checkked out", Toast.LENGTH_SHORT).show();
+                managementCart.reset();
+                ShowMain();
+        }
+
+        });
     }
     /*private void bottomNavigation() {
         FloatingActionButton floatingActionButton = findViewById(R.id.card_btn);
@@ -66,12 +77,12 @@ public class cartActivity extends AppCompatActivity {
         });
 
         recyclerViewList.setAdapter(adapter);
-        if (managementCart.getListCard().isEmpty()) {
+        if (!managementCart.getListCard().isEmpty()) {
             emptyTxt.setVisibility(View.VISIBLE);
             //scrollView.setVisibility(View.GONE);
         } else {
             emptyTxt.setVisibility(View.GONE);
-            scrollView.setVisibility(View.VISIBLE);
+            //scrollView.setVisibility(View.VISIBLE);
         }
     }
 
@@ -83,10 +94,13 @@ public class cartActivity extends AppCompatActivity {
         double total = Math.round((managementCart.getTotalFee() + tax + delivery) * 100.0) / 100.0;
         double itemTotal = Math.round(managementCart.getTotalFee() * 100.0) / 100.0;
 
+        System.out.println(" " + itemTotal);
+
         totalFeeTV.setText("$" + itemTotal);
         taxTV.setText("$" + tax);
         deliveryTV.setText("$" + delivery);
         emptyTxt.setText("$" + total);
+        Log.d("total", " " + total);
     }
 
     private void initView() {
@@ -97,5 +111,13 @@ public class cartActivity extends AppCompatActivity {
         //totalTxt = findViewById(R.id.totalTxt);
         emptyTxt = findViewById(R.id.emptyTxt);
         scrollView = findViewById(R.id.scrollView4);
+        checkoutBtn = findViewById(R.id.textView7);
     }
+    public void ShowMain(){
+        Intent ini = new Intent(this, MainActivity.class);
+        startActivity(ini);
+
+    }
+
+
 }

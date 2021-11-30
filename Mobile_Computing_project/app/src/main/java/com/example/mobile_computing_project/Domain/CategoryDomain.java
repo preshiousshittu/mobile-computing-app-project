@@ -14,6 +14,7 @@ public class CategoryDomain implements Serializable {
         this.title = title;
         this.Description = description;
         this.pic = pic;
+        this.fee = fee;
     }
 
     public String getTitle() {
