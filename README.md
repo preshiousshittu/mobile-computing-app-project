@@ -1,15 +1,12 @@
 # mobile-computing-app-project
 This is the repo for our mobile computing class project(a party supplies delivery app)
 
-email and password -> test2@gmail.com, 1234567
 
-Instructions for Running the Party Maker app
+**Instructions for Running the Party Maker app**
+If you intend to sign up you will need the following to gain access: 
 
-To navigate the app. You could either sign up or sign in  
-
-If you intend to sign up you will need the following to gain access:
-username: test@gmail.com
-password: 1234567
+username - test@gmail.com
+password - 1234567
 
 After you log in. The application takes you the main page where you can either search 
 for an item by using the search bar at the top or you can scroll down manually and go 
@@ -22,3 +19,12 @@ to either add one of that item to the cart or subtract that item from the cart.
 After adding your desired items to the cart. You can go to cart by clicking on cart at the 
 bottom right of the screen to checkout. Or you could go back to home if you intend change 
 your login credentials
+
+completion status for all of the functionality from your proposal:
+
+Start Activity - complete
+Login Activity - complete
+Main Activity - complete
+Show Detail Activity - complete
+Cart Activity - complete
+
